@@ -11,7 +11,7 @@ public class MainClass {
 
 		while (choice != 4) {
 			System.out.println("Chose one from the below options ");
-			System.out.println("\n1.Push\n2.Display\n3.Exit");
+			System.out.println("\n1.Push\n2.Display\n3.Pop\n4.Exit");
 			System.out.println("Enter your choice: ");
 
 			choice = sc.nextInt();
@@ -24,6 +24,9 @@ public class MainClass {
 				stack.display();
                 break;
 			case 3:
+				stack.pop();
+                break;
+			case 4:
 				 System.out.println("Exit the program");
                  System.exit(0);
                  break;

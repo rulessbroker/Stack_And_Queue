@@ -30,12 +30,24 @@ public class Stack {
 			return true;
 		}
 	}
-	
-	void display() {
-        System.out.println("Printing stack elements: ");
 
-        for (int i = top; i >= 0; i--) {
-            System.out.println(arr[i]);
-        }
-    }
+	void display() {
+		System.out.println("Printing stack elements: ");
+
+		for (int i = top; i >= 0; i--) {
+			System.out.println(arr[i]);
+		}
+	}
+
+	boolean pop() {
+
+		if (top == -1) {
+			System.out.println("Underflow !!");
+			return false;
+		} else {
+			top--;
+			System.out.println("Item popped");
+			return true;
+		}
+	}
 }
